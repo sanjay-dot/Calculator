@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calcu.css">
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <form name="calc">
+    <div class="calc-grid">
+
+            <input id="output" type="text" name="input"><br>
+
+<div class="calculator">
+            <input type ="button" class ="but"value="1" onclick="calc.input.value +=  '1'">
+            <input type ="button" value="2" class ="but" onclick="calc.input.value += '2'">
+            <input type ="button" value="3" class ="but"onclick="calc.input.value += '3'">
+            <input type ="button" class ="but" value="+" onclick="calc.input.value += '+'">
+
+            <input type ="button" value="4"class ="but" onclick="calc.input.value += '4'">
+            <input type ="button" class ="but"value="5" onclick="calc.input.value += '5'">
+            <input type ="button" class ="but"value="6" onclick="calc.input.value += '6'">
+            <input type ="button" class ="but"value="-" onclick="calc.input.value += '-'">
+
+            <input type ="button" class ="but"value="7" onclick="calc.input.value += '7'">
+            <input type ="button" class ="but"value="8" onclick="calc.input.value += '8'">
+            <input type ="button"class ="but" value="9" onclick="calc.input.value += '9'">
+            <input type ="button"class ="but" value="*" onclick="calc.input.value += '*'">
+
+            <input type ="button"class ="but"value="/" onclick="calc.input.value += '/'">
+            <input type ="button" class ="but"value="0" onclick="calc.input.value += '0'">
+            <input type ="button" class ="but"value="." onclick="calc.input.value += '.'">
+
+            <input type ="button" class ="but" value="=" onclick="calc.input.value= eval(calc.input.value)">
+
+
+            <input type ="button"class ="but" value="AC" onclick="calc.input.value =' ' "id= "clear">
+
+            <input type = "button" id="but" value="DEL" class="del" onclick="calc.input.value = calc.input.value.substr(0,calc.input.value.length-1)")> 
+        
+        </div>
+        </div>
+        </form>
+    </body>
+</html>
